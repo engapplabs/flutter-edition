@@ -1,4 +1,4 @@
-# Flutter Talk by EngApp
+<img src="https://i.imgur.com/FfzhNdt.png"/>
 
 **Fala Dev!** Seja bem-vindo ao repositório do **Flutter Talk**. Aqui você irá encontrar o material de apoio para concluir a aplicação do workshop. Siga as instruções abaixo para iniciar sua aplicação:
 
@@ -31,22 +31,16 @@ Com o diretório da aplicação já criado, chegou a hora de importar os arquivo
 
 ## Links referentes ao projeto
 
-Projeto no Figma: [Flutter Talk #1](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Talk #1")  
-Package do Font Awesome: [Font Awesome](https://pub.dartlang.org/packages/font_awesome_flutter "Font Awesome") ou simplesmente adicione `font_awesome_flutter: ^8.4.0` ao seu arquivo `pubspec.yaml`
+[Projeto no Figma](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Talk #1")  
+[Font Awesome Package](https://pub.dartlang.org/packages/font_awesome_flutter "Font Awesome")
 
 ## Flutter links
 
-[Site Oficial do Flutter](https://flutter.dev/ "Site Oficial do Flutter")  
-[Site Oficial do Dart](https://www.dartlang.org/ "Site Oficial do Dart")  
+[Site Oficial do Flutter](https://flutter.dev/ "Flutter")  
+[Site Oficial do Dart](https://www.dartlang.org/ "Dart")  
 [Dart Packages](https://pub.dartlang.org/ "Dart Packages")  
-[Linter](https://dart-lang.github.io/linter/ "Linter")
+[Linter for Dart](https://dart-lang.github.io/linter/ "Linter")
 
 ## Redes da EngApp
 
-[Site Oficial](https://www.engapp.com.br "Site Oficial")  
-[Facebook](https://www.facebook.com/engapplabs "Facebook")  
-[Instagram](https://www.instagram.com/engapplabs "Instagram")  
-[Twitter](https://www.twitter.com/engapplabs "Twitter")  
-[Linkedin](https://www.linkedin.com/company/engapplabs "Linkedin")  
-[Github](https://www.github.com/engapplabs "Github")  
-[Medium](https://www.medium.com/@engapplabs "Medium")
+<a href="https://www.engapp.com.br"><img src="https://i.imgur.com/TypxnUK.png" title="Site Oficial"></a> <a href="https://www.facebook.com/engapplabs"><img src="https://i.imgur.com/cfzC93n.png" title="Facebook"></a> <a href="https://www.instagram.com/engapplabs"><img src="https://i.imgur.com/Cp5iWOi.png" title="Instagram"></a> <a href="https://www.twitter.com/engapplabs"><img src="https://i.imgur.com/edhg3hw.png" title="Twitter"></a> <a href="https://www.linkedin.com/company/engapplabs"><img src="https://i.imgur.com/suW5lrH.png" title="Linkedin"></a> <a href="https://www.github.com/engapplabs"><img src="https://i.imgur.com/jKt3EAh.png" title="Github"></a> <a href="https://www.medium.com/@engapplabs"><img src="https://i.imgur.com/X6AIzR9.png" title="Medium"></a> <a href="https://www.discord.gg/D2gGbKt"><img src="https://i.imgur.com/5aXS4lt.png" title="Discord"></a>
