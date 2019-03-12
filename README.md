@@ -36,17 +36,17 @@ Package do Font Awesome: [Font Awesome](https://pub.dartlang.org/packages/font_a
 
 ## Flutter links
 
-[Site Oficial do Flutter](https://flutter.dev/ "Site Oficial do Flutter")
-[Site Oficial do Dart](https://www.dartlang.org/ "Site Oficial do Dart")
-[Dart Packages](https://pub.dartlang.org/ "Dart Packages")
+[Site Oficial do Flutter](https://flutter.dev/ "Site Oficial do Flutter")\n
+[Site Oficial do Dart](https://www.dartlang.org/ "Site Oficial do Dart")\n
+[Dart Packages](https://pub.dartlang.org/ "Dart Packages")\n
 [Linter](https://dart-lang.github.io/linter/ "Linter")
 
 ## Redes da EngApp
 
-[Site Oficial](https://www.engapp.com.br "Site Oficial")
-[Facebook](https://www.facebook.com/engapplabs "Facebook")
-[Instagram](https://www.instagram.com/engapplabs "Instagram")
-[Twitter](https://www.twitter.com/engapplabs "Twitter")
-[Linkedin](https://www.linkedin.com/company/engapplabs "Linkedin")
-[Github](https://www.github.com/engapplabs "Github")
+[Site Oficial](https://www.engapp.com.br "Site Oficial")\n
+[Facebook](https://www.facebook.com/engapplabs "Facebook")\n
+[Instagram](https://www.instagram.com/engapplabs "Instagram")\n
+[Twitter](https://www.twitter.com/engapplabs "Twitter")\n
+[Linkedin](https://www.linkedin.com/company/engapplabs "Linkedin")\n
+[Github](https://www.github.com/engapplabs "Github")\n
 [Medium](https://www.medium.com/@engapplabs "Medium")
