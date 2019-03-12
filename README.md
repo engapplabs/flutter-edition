@@ -27,11 +27,11 @@ Com o diretório da aplicação já criado, chegou a hora de importar os arquivo
 
 ## Print da tela que iremos criar
 
-<img src="home-screen.png" height="400em" />
+<img src="images/print.png" height="425em" />
 
 ## Links referentes ao projeto
 
-Projeto no Figma: [Flutter Talk #1](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Talk #1")
+Projeto no Figma: [Flutter Talk #1](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Talk #1")  
 Package do Font Awesome: [Font Awesome](https://pub.dartlang.org/packages/font_awesome_flutter "Font Awesome") ou simplesmente adicione `font_awesome_flutter: ^8.4.0` ao seu arquivo `pubspec.yaml`
 
 ## Flutter links
