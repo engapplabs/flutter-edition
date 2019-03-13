@@ -1,20 +1,20 @@
-<img src="https://i.imgur.com/FfzhNdt.png"/>
+<img src="images/flutter-edition.png"/>
 
-**Fala Dev!** Seja bem-vindo ao repositório do **Flutter Talk**. Aqui você irá encontrar o material de apoio para concluir a aplicação do workshop. Siga as instruções abaixo para iniciar sua aplicação:
+**Fala Dev!** Seja bem-vindo ao repositório do **Flutter Edition #1**. Aqui você irá encontrar o material de apoio para concluir a aplicação do workshop. Siga as instruções abaixo para iniciar sua aplicação:
 
 - Conecte um dispositivo móvel ao computador ou tenha instalado algum emulador para simular a aplicação
-- Com o Flutter já instalado em sua máquina execute o seguinte comando através do terminal: `flutter create flutter_talk`
-- Entre no diretório com `cd flutter_talk`
+- Com o Flutter já instalado em sua máquina execute o seguinte comando através do terminal: `flutter create flutter_edition`
+- Entre no diretório com `cd flutter_edition`
 - Execute `flutter run`
 
 Com o diretório da aplicação já criado, chegou a hora de importar os arquivos referentes às imagens e fontes da aplicação que iremos criar:
 
-- Clone este repositório `git clone https://github.com/engapplabs/flutter-talk.git`
+- Clone este repositório `git clone https://github.com/engapplabs/flutter-edition.git`
 - Extraia as pastas **images** e **fonts** e coloque na raíz do seu projeto recém criado
 
 **Seu projeto deverá ficar assim:**
 
-- flutter_talk
+- flutter_edition
   - android
   - **fonts**
   - **images**
@@ -31,7 +31,7 @@ Com o diretório da aplicação já criado, chegou a hora de importar os arquivo
 
 ## Links referentes ao projeto
 
-[Projeto no Figma](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Talk #1")  
+[Projeto no Figma](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Edition #1")  
 [Font Awesome Package](https://pub.dartlang.org/packages/font_awesome_flutter "Font Awesome")
 
 ## Flutter links
