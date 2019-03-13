@@ -1,4 +1,4 @@
-<img src="images/flutter-edition.png"/>
+<img src="images/banner.png"/>
 
 **Fala Dev!** Seja bem-vindo ao repositório do **Flutter Edition #1**. Aqui você irá encontrar o material de apoio para concluir a aplicação do workshop. Siga as instruções abaixo para iniciar sua aplicação:
 
