@@ -14,44 +14,11 @@ class HomeScreen extends StatelessWidget {
             Stack(
               children: <Widget>[
                 ImageContainer(),
-                Positioned(
-                  top: 170,
-                  left: 0,
-                  right: 0,
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      padding: EdgeInsets.all(20),
-                      height: 175,
-                      width: width,
-                      decoration: positionedContainerDec(),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          CardBalanceAndPrice(),
-                          Divider(),
-                          RowItemsBelowDivider(),
-                        ],
-                      ),
-                    ),
-                  ),
-                )
+                PositionedContainer(width: width),
               ],
             ),
             SizedBox(height: 20),
-            Padding(
-              padding: EdgeInsets.only(left: 30),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text('Explore', style: TextStyle(fontSize: 30)),
-                  Text(
-                    'Check out all our services',
-                    style: TextStyle(color: Color(0xFFA1A1A1)),
-                  )
-                ],
-              ),
-            ),
+            ExploreContainer(),
             Container(
               padding: EdgeInsets.only(left: 30),
               height: 120,
@@ -70,17 +37,9 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    width: 120,
-                    child: Card(
-                      child: Column(
-                        children: <Widget>[
-                          Image.asset('images/juice.png',
-                              height: 60, width: 60),
-                          Text('Merchandising')
-                        ],
-                      ),
-                    ),
+                  ListViewCard(
+                    image: 'images/juice.png',
+                    title: 'Merchandising',
                   ),
                   Container(
                     width: 120,
@@ -112,6 +71,6 @@ class HomeScreen extends StatelessWidget {
           ],
         ));
   }
-
-  
 }
+
+
