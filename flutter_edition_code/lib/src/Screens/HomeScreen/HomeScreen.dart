@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_edition/src/Screens/HomeScreen/Utils/HomeUtils.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -198,16 +199,5 @@ class HomeScreen extends StatelessWidget {
             )
           ],
         ));
-  }
-
-  List<Widget> cardItem({String image, String text}) {
-    return <Widget>[
-      Image.asset(
-        image,
-        height: 60,
-        width: 60,
-      ),
-      Text(text)
-    ];
   }
 }
