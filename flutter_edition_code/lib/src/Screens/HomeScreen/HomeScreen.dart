@@ -7,49 +7,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'STARBUCKS',
-            style: TextStyle(
-                color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold),
-          ),
-          elevation: 0.0,
-          centerTitle: true,
-          backgroundColor: Colors.white,
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          items: [
-            BottomNavigationBarItem(
-                activeIcon: Icon(
-                  FontAwesomeIcons.home,
-                  color: Color(0xFF459C6D),
-                ),
-                icon: Icon(
-                  FontAwesomeIcons.home,
-                  color: Color(0xFF363636),
-                ),
-                title: Container()),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  FontAwesomeIcons.coffee,
-                  color: Color(0xFF363636),
-                ),
-                title: Container()),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  FontAwesomeIcons.userAlt,
-                  color: Color(0xFF363636),
-                ),
-                title: Container()),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  FontAwesomeIcons.ellipsisH,
-                  color: Color(0xFF363636),
-                ),
-                title: Container()),
-          ],
-        ),
+        appBar: homeAppBar(),
+        bottomNavigationBar: homeBottomBar(),
         body: ListView(
           children: <Widget>[
             Stack(
