@@ -23,6 +23,7 @@ AppBar homeAppBar() {
   );
 }
 
+
 //BottomNavigationBar da HomeScreen
 BottomNavigationBar homeBottomBar() {
   return BottomNavigationBar(
@@ -72,6 +73,46 @@ BottomNavigationBarItem bottomItem({IconData icon, Color color}) {
         color: color,
       ),
       title: Container());
+}
+
+class StackContainer extends StatelessWidget {
+  const StackContainer({
+    Key key,
+    @required this.width,
+  }) : super(key: key);
+
+  final double width;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: <Widget>[
+        ImageContainer(),
+        PositionedContainer(width: width),
+      ],
+    );
+  }
+}
+
+class BodyListContainer extends StatelessWidget {
+  const BodyListContainer({
+    Key key,
+    @required this.width,
+  }) : super(key: key);
+
+  final double width;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: <Widget>[
+        StackContainer(width: width),
+        SizedBox(height: 20),
+        ExploreContainer(),
+        CardTypesList()
+      ],
+    );
+  }
 }
 
 BoxDecoration positionedContainerDec() {
@@ -213,14 +254,11 @@ class ExploreContainer extends StatelessWidget {
 }
 
 class ListViewCard extends StatelessWidget {
-   ListViewCard({
-    Key key,
-    @required this.image,
-    @required this.title,
-  }) : super(key: key);
+  ListViewCard({Key key, @required this.image, @required this.title})
+      : super(key: key);
 
-  String image;
-  String title;
+  final String image;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -228,11 +266,47 @@ class ListViewCard extends StatelessWidget {
       child: Card(
         child: Column(
           children: <Widget>[
-            Image.asset(image,
-                height: 60, width: 60),
+            Image.asset(image, height: 60, width: 60),
             Text(title)
           ],
         ),
+      ),
+    );
+  }
+}
+
+List<Widget> cardListItems() {
+  return <Widget>[
+    ListViewCard(
+      image: 'images/snack.png',
+      title: 'Our Menu',
+    ),
+    ListViewCard(
+      image: 'images/juice.png',
+      title: 'Merchandising',
+    ),
+    ListViewCard(
+      image: 'images/discount.png',
+      title: 'Promotion',
+    ),
+    ListViewCard(
+      image: 'images/discount.png',
+      title: 'Promotion',
+    ),
+  ];
+}
+
+class CardTypesList extends StatelessWidget {
+  const CardTypesList({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(left: 30),
+      height: 120,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: cardListItems(),
       ),
     );
   }
