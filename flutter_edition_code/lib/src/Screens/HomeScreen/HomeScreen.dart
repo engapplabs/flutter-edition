@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
+    double width = widthMethod(context);
     return Scaffold(
         appBar: homeAppBar(),
         bottomNavigationBar: homeBottomBar(),
@@ -13,13 +13,7 @@ class HomeScreen extends StatelessWidget {
           children: <Widget>[
             Stack(
               children: <Widget>[
-                Container(
-                  padding: EdgeInsets.all(0),
-                  margin: EdgeInsets.only(bottom: 150),
-                  child: Image.asset(
-                    'images/header.png',
-                  ),
-                ),
+                ImageContainer(),
                 Positioned(
                   top: 170,
                   left: 0,
@@ -30,54 +24,13 @@ class HomeScreen extends StatelessWidget {
                       padding: EdgeInsets.all(20),
                       height: 175,
                       width: width,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10.0),
-                        border: Border.all(
-                          width: 1,
-                          color: Color(0xFFF0C08F),
-                        ),
-                      ),
+                      decoration: positionedContainerDec(),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Text(
-                                'Card Balance',
-                                style: TextStyle(fontSize: 20),
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Text('\$'),
-                                  Text(
-                                    '194.20',
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                          CardBalanceAndPrice(),
                           Divider(),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Column(
-                                children: cardItem(
-                                    image: 'images/wallet.png', text: 'Top Up'),
-                              ),
-                              Column(
-                                children: cardItem(
-                                    image: 'images/wallet.png',
-                                    text: 'Rewards'),
-                              ),
-                              Column(
-                                children: cardItem(
-                                    image: 'images/mobile.png', text: 'Pay'),
-                              ),
-                            ],
-                          ),
+                          RowItemsBelowDivider(),
                         ],
                       ),
                     ),
@@ -159,4 +112,6 @@ class HomeScreen extends StatelessWidget {
           ],
         ));
   }
+
+  
 }

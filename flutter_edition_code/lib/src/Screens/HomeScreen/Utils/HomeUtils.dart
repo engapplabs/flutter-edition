@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+double widthMethod(BuildContext context) {
+  final width = MediaQuery.of(context).size.width;
+  return width;
+}
+
 //AppBar da HomeScreen
 AppBar homeAppBar() {
   return AppBar(
     title: Text(
       'STARBUCKS',
       style: TextStyle(
-          color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold),
+        color: Colors.black,
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
+      ),
     ),
     elevation: 0.0,
     centerTitle: true,
@@ -21,10 +29,9 @@ BottomNavigationBar homeBottomBar() {
     type: BottomNavigationBarType.fixed,
     items: [
       bottomHomeItem(
-        activeColor: Color(0xFF459C6D),
-        icon: FontAwesomeIcons.home,
-        color: Color(0xFF363636)
-      ),
+          activeColor: Color(0xFF459C6D),
+          icon: FontAwesomeIcons.home,
+          color: Color(0xFF363636)),
       bottomItem(
         icon: FontAwesomeIcons.coffee,
         color: Color(0xFF363636),
@@ -41,7 +48,11 @@ BottomNavigationBar homeBottomBar() {
   );
 }
 
-BottomNavigationBarItem bottomHomeItem({Color activeColor, IconData icon, Color color}) {
+BottomNavigationBarItem bottomHomeItem({
+  Color activeColor,
+  IconData icon,
+  Color color,
+}) {
   return BottomNavigationBarItem(
       activeIcon: Icon(
         icon,
@@ -61,6 +72,74 @@ BottomNavigationBarItem bottomItem({IconData icon, Color color}) {
         color: color,
       ),
       title: Container());
+}
+
+BoxDecoration positionedContainerDec() {
+  return BoxDecoration(
+    color: Colors.white,
+    borderRadius: BorderRadius.circular(10.0),
+    border: Border.all(
+      width: 1,
+      color: Color(0xFFF0C08F),
+    ),
+  );
+}
+
+class ImageContainer extends StatelessWidget {
+  const ImageContainer({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(0),
+      margin: EdgeInsets.only(bottom: 150),
+      child: Image.asset(
+        'images/header.png',
+      ),
+    );
+  }
+}
+
+class CardBalanceAndPrice extends StatelessWidget {
+  const CardBalanceAndPrice({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Text('Card Balance', style: TextStyle(fontSize: 20)),
+        Row(
+          children: <Widget>[
+            Text('\$'),
+            Text('194.20', style: TextStyle(fontSize: 20)),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class RowItemsBelowDivider extends StatelessWidget {
+  const RowItemsBelowDivider({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Column(
+          children: cardItem(image: 'images/wallet.png', text: 'Top Up'),
+        ),
+        Column(
+          children: cardItem(image: 'images/wallet.png', text: 'Rewards'),
+        ),
+        Column(
+          children: cardItem(image: 'images/mobile.png', text: 'Pay'),
+        ),
+      ],
+    );
+  }
 }
 
 List<Widget> cardItem({String image, String text}) {
