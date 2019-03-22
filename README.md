@@ -31,7 +31,7 @@ Com o diretório da aplicação já criado, chegou a hora de importar os arquivo
 
 ## Links referentes ao projeto
 
-[Projeto no Figma](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z/Starbucks-Clone?node-id=0%3A1 "Flutter Edition #1")  
+[Projeto no Figma](https://www.figma.com/file/cJxWamDpLh1BbAwitujQfR0z "Flutter Edition #1")  
 [Font Awesome Package](https://pub.dartlang.org/packages/font_awesome_flutter "Font Awesome")
 
 ## Flutter links
